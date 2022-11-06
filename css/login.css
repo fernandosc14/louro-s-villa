@@ -3,7 +3,7 @@
     top:50%;
     left:50%;
     transform: translate(-50%, -50%);
-
+    border-radius: 10px;
 }
 
 .container-login{
@@ -78,7 +78,6 @@ form .btn{
     width: 100%;
     position: relative;
     overflow: hidden;
-
 }
 
 form .btn .space{
@@ -106,13 +105,14 @@ form .btn button{
 }
 
 
-/*=======================*/
+/*==========  REGISTO  =============*/
 
 .container-registo{
     position: absolute;
     top:50%;
     left:50%;
     transform: translate(-50%, -50%);
+    border-radius: 10px;
 }
 
 .container-registo{
@@ -187,7 +187,6 @@ form .btn{
     width: 100%;
     position: relative;
     overflow: hidden;
-
 }
 
 form .btn .space{

@@ -1,4 +1,7 @@
-<?php 
+<?php
+session_start();
+
+
 include ("conexao.php");
 include ("config.php");
 ?>
@@ -90,10 +93,20 @@ include ("config.php");
             <div class="container-login">
                <label for="" class="close-btn fas fa-times" onclick=off(); style="color:#03cafc;position: absolute;right: 20px;top: 15px; font-size: 18px;cursor: pointer;"></label>
                   <div class="login-content">Login</div>
-                  <form action="#">
+                  <?php
+                    if(isset($_SESSION['offline'])):
+                  ?>
+                  <div class="login_erro">
+                    <p>Erro no login</p>
+                  </div>
+                  <?php
+                  endif;
+                  unset($_SESSION['offline']);
+                  ?>
+                  <form action="users.php">
                      <div class="dados">
                         <label>Email</label>
-                        <input type="email" required>
+                        <input type="text" required>
                      </div>
                      <div class="dados">
                         <label>Password</label>
@@ -115,18 +128,38 @@ include ("config.php");
             <div class="container-registo">
                <label for="" class="close-btn fas fa-times" onclick=off2(); style="color:#03cafc;position: absolute;right: 20px;top: 15px; font-size: 18px;cursor: pointer;"></label>
                   <div class="registo-content">Criar Conta</div>
-                  <form action="#">
+                  <?php
+                  if(isset($_SESSION['status_registo']) == true):
+                  ?>
+                  <div class="sucesso">
+                    <p>Registo Efetuado Com Sucesso!</p>
+                  </div>
+                  <?php
+                  endif;
+                  unset($_SESSION['status_registo']);
+                  ?>
+                  <?php
+                  if(isset($_SESSION['user_existe'])):
+                  ?>
+                  <div class="user_existe">
+                  <p>User já existe!</p>
+                  </div>
+                  <?php
+                  endif;
+                  unset($_SESSION['user_existe']);
+                  ?>
+                  <form action="users.php" method="POST">
                      <div class="dados">
                         <label>Nome</label>
-                        <input type="text" required>
+                        <input type="text" name="nome" required>
                      </div>
                      <div class="dados">
                         <label>Email</label>
-                        <input type="email" required>
+                        <input type="email" name="email" required>
                      </div>
                      <div class="dados">
                         <label>Password</label>
-                        <input type="password" required>
+                        <input type="password" name="pass" required>
                      </div>
                      <div class="btn">
                         <div class="space"></div>
