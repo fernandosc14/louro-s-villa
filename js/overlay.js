@@ -14,5 +14,14 @@ function off2(){
     document.getElementById('overlay-two').style.display="none";
 }
 
+/*Cesto de compras*/
+
+function onCompras(){
+    document.getElementById('overlay-three').style.display="block";
+}
+
+function offCompras(){
+    document.getElementById('overlay-three').style.display="none";
+}
 
 

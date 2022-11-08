@@ -14,6 +14,8 @@ include ("config.php");
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="viewport" content="initial-scale=1, maximum-scale=1">
 
+        <link rel="icon" type="imagem/png" href="images/icone.png"/>
+
         <title>Megabyte</title>
 
         <meta name="keywords" content="">
@@ -22,11 +24,11 @@ include ("config.php");
 
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" href="css/overlay.css">
+        <link rel="stylesheet" href="css/compras.css">
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="css/footer.css">
         <link rel="stylesheet" href="css/responsive.css">
         <link rel="stylesheet" href="css/login.css">
-        <link rel="icon" href="images/fevicon.png" type="image/gif" />
         <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
         <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
@@ -57,16 +59,16 @@ include ("config.php");
                         <div class="collapse navbar-collapse" id="navbarsExample04">
                            <ul class="navbar-nav mr-auto">
                               <li class="nav-item active">
-                                 <a class="nav-link" href="index.html">Home</a>
+                                 <a class="nav-link" href="index.php">Home</a>
                               </li>
                               <li class="nav-item">
                                  <a class="nav-link" href="#sobre">Sobre</a>
                               </li>
                               <li class="nav-item">
-                                 <a class="nav-link" href="shop.html">Loja</a>
+                                 <a class="nav-link" href="#">Loja</a>
                               </li>
                               <li class="nav-item">
-                                 <a class="nav-link" href="contact.html">Contacte-nos</a>
+                                 <a class="nav-link" href="#">Contacte-nos</a>
                               </li>
                               <li class="nav-item d_none login_btn">
                                  <a class="nav-link" href="#" onclick=on();>Login</a>
@@ -75,7 +77,13 @@ include ("config.php");
                                  <a class="nav-link" href="#" onclick=on2()>Criar Conta</a>
                               </li>
                               <li class="nav-item d_none sea_icon">
-                                 <a class="nav-link" href="#"><i class="fa fa-shopping-bag" aria-hidden="true"></i>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<i class="fa fa-search" aria-hidden="true"></i></a>
+                                 <a class="nav-link" href="#" onclick=onCompras()><i class="fa fa-shopping-bag" aria-hidden="true"></i></a>
+                              </li>
+                              <li class="nav-item d_none sea_icon">
+                                <a class="nav-link" href="#"><i class="fa fa-search" aria-hidden="true"></i></a>
+                              </li>
+                              <li class="nav-item d_none sea_icon">
+                                <a class="nav-link" href="#"><i class="fa fa-user" aria-hidden="true"></i></a>
                               </li>
                            </ul>
                         </div>
@@ -170,6 +178,17 @@ include ("config.php");
          </div>
       </div>
       <!-- FIM Registo -->
+      <!-- INICIO Compras -->
+      <div id="overlay-three">
+        <div class="centro1">
+            <div class="container-compras">
+                <label for="" class="close-btn fas fa-times" onclick=offCompras(); style="color:#03cafc;position: absolute;right: 20px;top: 15px; font-size: 18px;cursor: pointer;"></label>
+                <div class="compras-content">Login</div>
+
+            </div>
+        </div>
+      </div>
+      <!-- FIM Compras -->
       <!-- banner -->
       <section class="banner_main">
          <div id="banner1" class="carousel slide" data-ride="carousel">
@@ -194,7 +213,6 @@ include ("config.php");
                      <div class="carousel-caption">
                         <div class="text-bg">
                            <h1> <span class="blu">Entregando um amanhã melhor <br></span>Atualize sua vida</h1>
-                           <figure><img src="images/banner_img.png" alt="#"/></figure>
                            <a class="read_more" href="#">Compre agora</a>
                         </div>
                      </div>
@@ -205,7 +223,6 @@ include ("config.php");
                      <div class="carousel-caption">
                         <div class="text-bg">
                            <h1> <span class="blu">Entregando um amanhã melhor <br></span>Atualize sua vida</h1>
-                           <figure><img src="images/banner_img.png" alt="#"/></figure>
                            <a class="read_more" href="#">Compre agora</a>
                         </div>
                      </div>
