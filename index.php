@@ -8,7 +8,7 @@ include ("config.php");
 
 <!DOCTYPE html>
 <html lang="pt">
-    <head>
+    <head>  
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -180,10 +180,10 @@ include ("config.php");
       <!-- FIM Registo -->
       <!-- INICIO Compras -->
       <div id="overlay-three">
-        <div class="centro1">
+        <div class="centro">
             <div class="container-compras">
                 <label for="" class="close-btn fas fa-times" onclick=offCompras(); style="color:#03cafc;position: absolute;right: 20px;top: 15px; font-size: 18px;cursor: pointer;"></label>
-                <div class="compras-content">Login</div>
+                <div class="compras-content"></div>
 
             </div>
         </div>
