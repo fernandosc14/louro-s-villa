@@ -264,8 +264,7 @@ include ("config.php");
                <div class="col-md-10 offset-md-1">
                   <div class="titlepage">
                      <h2>Nossos Produtos</h2>
-                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labor
-                        e et dolore magna aliqua. Ut enim ad minim veniam, qui
+                     <p><?php echo $nossos_produtos?>
                      </p>
                   </div>
                </div>
@@ -349,7 +348,7 @@ include ("config.php");
                   <div class="max_width">
                      <div class="titlepage">
                         <h2>Nossos melhores componentes</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p>
+                        <p><?php echo $destaque?></p>
                         <a class="read_more" href="#">Compre Agora</a>
                      </div>
                   </div>
