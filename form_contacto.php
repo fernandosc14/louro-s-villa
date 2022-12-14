@@ -8,9 +8,9 @@
         <div class="col-md-10">
           
           <div class="row align-items-center">
-            <div class="col-lg-7 mb-5 mb-lg-0">
-
-              <h2 class="mb-5">Contacte-nos.</h2>
+            <div class="col-lg-7 mb-5 mb-lg-0"> 
+ 
+              <h2 class="mb-5">Contacte-nos</h2>
 
               <form class="border-right pr-5 mb-5" method="post" id="contactForm" name="contactForm">
                 <div class="row">
@@ -34,7 +34,7 @@
                 </div>
                 <div class="row">
                   <div class="col-md-12">
-                    <input type="submit" value="Enviar" class="btn btn-primary rounded-0 py-2 px-4">
+                    <input type="submit" value="Enviar" id="btn_submit" class="btn btn-primary rounded-1 py-2 px-5">
                     <span class="submitting"></span>
                   </div>
                 </div>

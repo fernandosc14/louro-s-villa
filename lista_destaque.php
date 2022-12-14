@@ -4,7 +4,7 @@
                <div class="col-md-10 offset-md-1">
                   <div class="titlepage">
                      <h2>Nossos Produtos</h2>
-                     <p><?php echo $nossos_produtos?>
+                     <p><?php echo $destaque1?>
                      </p>
                   </div>
                </div>

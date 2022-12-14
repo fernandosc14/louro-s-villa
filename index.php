@@ -1,7 +1,6 @@
 <?php
 session_start();
 
-
 include ("conexao.php");
 include ("config.php");
 ?>
@@ -28,7 +27,6 @@ include ("config.php");
         <link rel="stylesheet" href="css/compras.css">
         <link rel="stylesheet" href="css/footer.css">
         <link rel="stylesheet" href="css/responsive.css">
-        <link rel="stylesheet" href="css/login.css">
         <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
         <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
@@ -44,7 +42,6 @@ include ("config.php");
       include("produto_destaque.php");
       include("footer.php");
    ?>
-      <!-- end footer -->
       <!-- Javascript files-->
       <script src="js/overlay.js"></script>
       <script src="js/jquery.min.js"></script>

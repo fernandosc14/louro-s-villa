@@ -10,7 +10,7 @@
                   <div class="max_width">
                      <div class="titlepage">
                         <h2>Nossos melhores componentes</h2>
-                        <p><?php echo $destaque?></p>
+                        <p><?php echo $destaque2?></p>
                         <a class="read_more" href="#">Compre Agora</a>
                      </div>
                   </div>
