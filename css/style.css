@@ -200,7 +200,18 @@ button {
     padding: 0;
 }
 
+/* ------------ Anunciar -----------------*/
 
+.anuncio{
+    background: #03cafc;
+    height: 40px;
+}
+
+.anuncio p{
+    padding-top: 10px;
+    text-align: center;
+    color: white;
+}
 /* ------------ Nav-menu -----------------*/
 
 .navigation.navbar {
@@ -252,13 +263,12 @@ button {
     color: #8c8c8c !important;
 }
 
-.header {
+.header{
     width: 100%;
     padding: 30px 30px;
     background: transparent;
     position: absolute;
     z-index: 999;
-    border-top: #090102 solid 11px;
 }
 
 .logo {
@@ -446,7 +456,7 @@ button {
 .glasses .titlepage p {
     font-size: 17px;
     line-height: 30px;
-    font-weight: 400;
+    font-weight: 400; 
     padding-top: 10px;
 }
 

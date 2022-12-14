@@ -24,11 +24,9 @@ include ("config.php");
 
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" href="css/style.css">
-        <link rel="stylesheet" href="css/overlay.css">
-        <link rel="stylesheet" href="css/compras.css">
+        <link rel="stylesheet" href="css/style_contact.css">
         <link rel="stylesheet" href="css/footer.css">
         <link rel="stylesheet" href="css/responsive.css">
-        <link rel="stylesheet" href="css/login.css">
         <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
         <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
@@ -37,13 +35,10 @@ include ("config.php");
 
     <body class="main-layout">
     <?php
-      include("menu.php");
-      include("banner.php");
-      include("about_section.php");
-      include("lista_destaque.php");
-      include("produto_destaque.php");
-      include("footer.php");
-   ?>
+    include("menu.php");
+    include("form_contacto.php");  
+    include ("footer.php");
+    ?>
       <!-- end footer -->
       <!-- Javascript files-->
       <script src="js/overlay.js"></script>
