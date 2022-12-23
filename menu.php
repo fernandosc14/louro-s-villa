@@ -27,7 +27,7 @@
                                  <a class="nav-link" href="index.php">Home</a>
                               </li>
                               <li class="nav-item">
-                                 <a class="nav-link" href="#sobre">Sobre</a>
+                                 <a class="nav-link" href="index.php#sobre">Sobre</a>
                               </li>
                               <li class="nav-item">
                                  <a class="nav-link" href="#">Loja</a>

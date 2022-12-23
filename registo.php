@@ -1,8 +1,6 @@
 <?php
-session_start();
-
-
-include ("conexao.php");
+require_once 'users.php';
+$u = new user;
 include ("config.php");
 ?>
 
@@ -23,6 +21,7 @@ include ("config.php");
         <meta name="author" content="">
 
         <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/alerts.css">
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="css/style_contact.css">
         <link rel="stylesheet" href="css/footer.css">
@@ -31,6 +30,7 @@ include ("config.php");
         <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
         <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
       </head>
 
     <body class="main-layout">
@@ -48,16 +48,17 @@ include ("config.php");
           
           <div class="row align-items-center">
             <div class="col-lg-7 mb-5 mb-lg-0"> 
- 
+              <p class="map_pages"><a href="index.php">Home</a> > Criar Conta</p>
+              
               <h2 class="mb-5">Criar Conta</h2>
 
-              <form class="border-right pr-5 mb-5" method="post" id="contactForm" name="contactForm">
+              <form class="border-right pr-5 mb-5" method="POST" id="contactForm" name="contactForm">
                 <div class="row">
                   <div class="col-md-6 form-group">
-                    <input type="text" class="form-control" name="fname" id="fname" placeholder="Primeiro Nome">
+                    <input type="text" class="form-control" name="pnome" id="fnome" placeholder="Primeiro Nome">
                   </div>
                   <div class="col-md-6 form-group">
-                    <input type="text" class="form-control" name="lname" id="lname" placeholder="Último Nome">
+                    <input type="text" class="form-control" name="unome" id="lnome" placeholder="Último Nome">
                   </div>
                 </div>
                 <div class="row">
@@ -79,10 +80,63 @@ include ("config.php");
                 </div>
               </form>
 
+              <?php
+              if (isset($_POST['pnome']))
+              {
+                $pnome = addslashes($_POST['pnome']);
+                $unome = addslashes($_POST['unome']);
+                $email = addslashes($_POST['email']);
+                $password = addslashes($_POST['password']);
+
+                if(!empty($pnome) && !empty($unome) && !empty($email) && !empty($password))
+                {
+                  $u->conectar("loja","localhost","root","");
+                  if($u->msgErro == "")
+                  {
+                    if($u->registo($pnome,$unome,$email,$password))
+                    {
+                      ?>
+                      <div id="msg_sucesso">
+                      Conta criada com sucesso!  
+                      </div>
+                      <?php      
+                    }
+                    else
+                    {
+                      ?>
+                      <div class="msg_erro">
+                      Email já registado!  
+                      </div>
+                      <?php     
+                    }  
+                  }
+                  else
+                  {
+                    ?>
+                    <div class="msg_erro">
+                    <?php echo "Erro: ".$u->msgErro; ?>
+                    </div>
+                    <?php    
+                  }
+                }
+                else 
+                {
+                  ?>
+                  <div class="msg_erro">
+                  Preencha todos os campos!  
+                  </div>
+                  <?php 
+                }
+              }
+
+
+              ?>
+
             </div>
             <div class="col-lg-4 ml-auto">
               <img src="images/logo_contact.png">
             </div>
+            <p class="map_pages"><a href="login.php">Já é cliente? <b>Entre agora!<b></a></p>
           </div>
         </div>  
         </div>
@@ -94,6 +148,7 @@ include ("config.php");
     ?>
       <!-- end footer -->
       <!-- Javascript files-->
+      <script src="js/notificao.js"></script>
       <script src="js/overlay.js"></script>
       <script src="js/jquery.min.js"></script>
       <script src="js/popper.min.js"></script>

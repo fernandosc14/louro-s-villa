@@ -1,7 +1,4 @@
 <?php
-session_start();
-
-include ("conexao.php");
 include ("config.php");
 ?>
 
@@ -23,9 +20,7 @@ include ("config.php");
 
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" href="css/style.css">
-        <link rel="stylesheet" href="css/overlay.css">
         <link rel="stylesheet" href="css/compras.css">
-        <link rel="stylesheet" href="css/footer.css">
         <link rel="stylesheet" href="css/responsive.css">
         <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
         <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
@@ -37,13 +32,12 @@ include ("config.php");
     <?php
       include("menu.php");
       include("banner.php");
-      include("about_section.php");
+      include("about_section.php"); 
       include("lista_destaque.php");
       include("produto_destaque.php");
-      include("footer.php");
+      include("footer.php"); 
    ?>
       <!-- Javascript files-->
-      <script src="js/overlay.js"></script>
       <script src="js/jquery.min.js"></script>
       <script src="js/popper.min.js"></script>
       <script src="js/bootstrap.bundle.min.js"></script>

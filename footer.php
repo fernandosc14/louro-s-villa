@@ -3,18 +3,18 @@
             <div class="content-footer">
                 <div class="ul1">
                     <ul>
-                        <li><a href="#" target="_blank">Política de Privacidade</a></li>
-                        <li><a href="#" target="_blank">Proteção de Marca</a></li>
-                        <li><a href="#">Contacta-nos</a></li>
+                        <li><a href="politica_de_privacidade.php" target="_blank">Política de Privacidade</a></li>
+                        <li><a href="protecao_de_marca.php" target="_blank">Proteção de Marca</a></li>
+                        <li><a href="contact.php">Contacta-nos</a></li>
                         <li><a href="#">Produtos</a></li>
                         <li><a href="#" target="_blank">Empregos</a></li>
                     </ul>
                 </div>
                 <div class="ul2">
                     <ul>
-                        <li><a href="#" target="_blank">Termos de Uso</a></li>
+                        <li><a href="termos_de_uso.php" target="_blank">Termos de Uso</a></li>
+                        <li><a href="politica_de_reembolso.php" target="_blank">Política de reembolso</a></li>
                         <li><a href="#" target="_blank">Informação</a></li>
-                        <li><a href="#" target="_blank">Imprensa</a></li>
                         <li><a href="#" target="_blank">Loja</a></li>
                     </ul>
                 </div>
@@ -39,4 +39,4 @@
                 <img class="logo_footer" src="images/logo.png">
                 <p>© 2022 Megabyte. Todos os direitos reservados.</p>
         </section>
-    </footer>
+</footer>

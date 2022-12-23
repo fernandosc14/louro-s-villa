@@ -1,0 +1,21 @@
+div#msg_sucesso{
+    width: 500px;
+    padding:10px;
+    background-color: rgba(0, 255, 0, .3);
+    border: 1px solid green;
+    border-radius: 7px ;
+    color: black;
+    font-weight: bold;
+    text-align: center;
+}
+
+div.msg_erro{
+    width: 500px;
+    padding:10px;
+    background-color: rgba(255, 0, 0, .3);
+    border: 1px solid red;
+    border-radius: 7px ;
+    color: black;
+    font-weight: bold;
+    text-align: center;
+}

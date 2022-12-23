@@ -9,6 +9,8 @@
           
           <div class="row align-items-center">
             <div class="col-lg-7 mb-5 mb-lg-0"> 
+              <p class="map_pages"><a href="index.php">Home</a> > Contacte-nos</p>    
+
  
               <h2 class="mb-5">Contacte-nos</h2>
 

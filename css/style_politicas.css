@@ -1,0 +1,127 @@
+/*  Politicas   */
+.politicas_content
+{
+    padding: 10rem 0;
+    max-width: 65ch;
+    margin: 0 auto;
+    padding-left: 20px;
+    padding-right: 20px; 
+    color: grey;
+}
+
+.politicas_content h1
+{
+    text-align: center;
+    font-weight: bold;
+    font-size: 35px;
+}
+
+.politicas_content h4
+{
+    padding: 2rem 0;
+    font-size: 19px;
+    font-weight: 600;
+}
+
+.politicas_content p{
+    font-size: 16px;
+    font-weight: normal;
+}
+
+.politicas_content ol{
+    padding-left: 30px;
+}
+
+.politicas_content li{
+    list-style: decimal !important;
+}
+
+.politicas_content a:hover{
+    color: #03cafc;
+}
+
+.politicas_content i{
+    font-size: 25px;
+    color: black;   
+    transition: all .5s;
+}
+
+.politicas_content i:hover{
+    color: #03cafc;
+    transition: all .5s;
+}
+
+/*  Footer  */
+
+.footer_politica
+{
+    background-color: #1b222e;
+    min-height: 120px;
+    padding: 34px 0 34px 0;
+}
+
+.content_footer
+{
+    width: auto;
+    max-width: 1440px;
+    font-size: 13px;
+}
+
+.row1{
+    margin-left: -5px;
+    margin-right: -5px;
+}
+
+.col1{
+    float: left;
+    width: 18.18181818%;
+}
+
+.logo_footer{
+    margin-left: 400px;
+}
+
+.nav-row2{
+    float:right;
+    display: block;
+    margin-right: -30px;
+}
+
+.nav_items{
+    display: block;
+    list-style-type: none;
+    margin-top: 0;
+    margin-bottom: 0;
+    text-align: right;
+    padding-right:20px; 
+}
+
+.nav_item{
+    display: inline-block;
+    padding: 0 10px 0 20px;
+}
+
+.nav_item a{
+    color: #fff;
+    display: block;
+    padding: 0.8em 1px 0.7em 1px;
+    border-bottom: none;
+    text-transform: uppercase;
+    transition: all .5s;
+}
+
+.nav_item a:hover{
+    color: #03cafc;
+    transition: all .5s;
+}
+
+.policy_footer{
+    color: #8a909a;
+    float: right;
+    display: block;
+    position: relative;
+    top: -4px;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 15px 21px 20px 1px;
+}

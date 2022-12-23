@@ -1,9 +1,52 @@
 <?php
-session_start();
+require_once 'users.php';
+$u = new user;
 
-include('conexao.php');
-include('config.php')
+include ('config.php');
 ?>
+<?php
+              if (isset($_POST['email']))
+              {
+                $email = addslashes($_POST['email']);
+                $password = addslashes($_POST['password']);
+
+                if(!empty($email) && !empty($password))
+                {
+                  $u->conectar("loja","localhost","root","");
+                  if($u->msgErro == "")
+                  {
+                    if($u->login($email,$password))
+                    {
+                      header("location: painel.php");   
+                    }
+                    else
+                    {
+                      ?>
+                      <div class="msg_erro">
+                      Email e/ou Password estão incorretos!  
+                      </div>
+                      <?php         
+                    }
+                  }
+                  else
+                  {
+                      ?>
+                      <div class="msg_erro">
+                      <?php echo "Erro: ".$u->msgErro; ?>
+                      </div>
+                      <?php 
+                  }
+                }
+                else
+                {
+                    ?>
+                    <div class="msg_erro">
+                    Preencha todos os campos!  
+                    </div>
+                    <?php 
+                }
+              }
+              ?>
 
 <!DOCTYPE html>
 <html lang="pt">
@@ -22,6 +65,7 @@ include('config.php')
         <meta name="author" content="">
 
         <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/alerts.css">
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="css/style_contact.css">
         <link rel="stylesheet" href="css/footer.css">
@@ -33,7 +77,7 @@ include('config.php')
       </head>
       <body class="main-layout">
     <?php
-        include("menu.php");
+        include ('menu.php');
     ?>
         <section class="section_contact">
     <br><br>
@@ -46,7 +90,7 @@ include('config.php')
           
           <div class="row align-items-center">
             <div class="col-lg-7 mb-5 mb-lg-0"> 
- 
+              <p class="map_pages"><a href="index.php">Home</a> > Login</p>
               <h2 class="mb-5">Login</h2>
 
               <form class="border-right pr-5 mb-5" method="post" id="contactForm" name="contactForm">
@@ -69,17 +113,19 @@ include('config.php')
                   </div>
                 </div>
               </form>
-
             </div>
             <div class="col-lg-4 ml-auto">
               <img src="images/logo_contact.png">
             </div>
+            <p class="map_pages"><a href="registo.php">Ainda não é cliente? <b>Criar conta agora!<b></a></p>
           </div>
         </div>  
         </div>
       </div>
   </div>
-</section>  
+</section>
+
+
     <?php
         include("footer.php");
     ?>

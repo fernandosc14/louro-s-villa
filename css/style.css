@@ -275,6 +275,19 @@ button {
     padding-top: 14px;
 }
 
+.map_pages{
+    font-size:10pt;
+    color:#03cafc;
+    text-decoration: none;
+}
+
+.map_pages a{
+    color: black;
+}
+.map_pages a:hover{
+    color:#03cafc;
+}
+
 
 /** banner section **/
 
@@ -730,7 +743,7 @@ footer .footer
     position: relative;
     width: 100%;
     min-height: 300px;
-    background-color: #f5f6f6;
+    background: #f5f6f6;
 }
 footer .footer .content-footer
 {
