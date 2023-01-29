@@ -43,7 +43,7 @@ $result = $conexao->query($sql);
       </div>    
    </div>
    <div class="col-md-12">
-         <a class="read_more" href="loja.php">Ver Mais</a>
+         <a class="read_more" href="loja.php ">Ver Mais</a>
    </div>
 </div>
 
