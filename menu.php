@@ -30,7 +30,7 @@
                                  <a class="nav-link" href="index.php#sobre">Sobre</a>
                               </li>
                               <li class="nav-item">
-                                 <a class="nav-link" href="#">Loja</a>
+                                 <a class="nav-link" href="loja.php">Loja</a>
                               </li>
                               <li class="nav-item">
                                  <a class="nav-link" href="contact.php">Contacte-nos</a>
@@ -48,7 +48,7 @@
                                 <a class="nav-link" href="#"><i class="fa fa-search" aria-hidden="true"></i></a>
                               </li>
                               <li class="nav-item d_none sea_icon">
-                                <a class="nav-link" href="#"><i class="fa fa-user" aria-hidden="true"></i></a>
+                                <a class="nav-link" href="painel.php"><i class="fa fa-user" aria-hidden="true"></i></a>
                               </li>
                            </ul>
                         </div>

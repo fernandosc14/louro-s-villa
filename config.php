@@ -34,4 +34,8 @@ $destaque1 = $destaque1_sql->destaque1;
 $result = mysqli_query($conexao, "SELECT destaque2 from config");
 $destaque2_sql = mysqli_fetch_object($result);
 $destaque2 = $destaque2_sql->destaque2;
+
+$result = mysqli_query($conexao, "SELECT img_destaque from config");
+$img_destaque2_sql = mysqli_fetch_object($result);
+$img_destaque2 = $img_destaque2_sql->img_destaque;
 ?>

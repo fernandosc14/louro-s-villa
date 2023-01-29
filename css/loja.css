@@ -1,0 +1,172 @@
+ul,
+li,
+ol {
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+}  
+
+.row_cat {
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.col-md-12_cat {
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+
+.title_cat h2 {
+    font-size: 50px;
+    line-height: 45px;
+    color: #000;
+    font-weight: bold;
+    margin-bottom: 25px !important;
+    text-transform: uppercase;
+    border-bottom: #03cafc solid 3px;
+    max-width: 312px;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 70px;
+    padding-bottom: 4px;
+}
+
+ul.categiri li {
+    display: inline-block;
+    padding: 0;
+    margin-bottom: 50px;
+}
+
+ul.categiri li a {
+    padding: 10px 12px;
+    font-weight: 500;
+    font-size: 19px;
+    transition:  all .5s;
+}
+
+ul.categiri li a:hover {
+    color: #03cafc;
+    text-decoration: underline !important;
+    text-underline-offset: 5px;
+    transition: all .5s;
+}
+
+.Categories {
+	background: transparent;
+	padding-top: 130px;
+}
+
+.trending .trending-box h3 {
+	font-weight: 500;
+    font-size: 30px;
+    line-height: 28px;
+    color: #050000;
+    padding: 20px 20px;
+}
+
+.categiri #active a{
+    color: #03cafc;
+}
+
+.categiri #active a:hover{
+    text-decoration: none !important;
+}
+
+.brand-bg  {
+    background: transparent;
+    margin-bottom: 100px;
+    padding: 40px 25px;
+      }
+     .brand-bg h3 {
+         font-size:26px; 
+         line-height: 30px; 
+         color: #000; 
+         font-weight: bold;  
+         text-transform: uppercase;
+        padding-bottom: 30px;
+          }
+     .brand-bg .brand-box {
+         background: white;
+         text-align: center;
+         padding: 25px 20px 25px 20px;
+         text-align: center;
+    
+     }
+    
+    
+    .brand-bg .brand-box i {
+        height: 200px;
+        float: left;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+    
+    .brand-bg .brand-box img {
+        max-height: 290px;
+    }
+    
+    
+     .brand-bg .brand-box  h4 {
+     color: #020000;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 20px;
+    padding-bottom: 0px;
+    
+     }
+     .brand-bg .brand-box h5 {
+    top: 0px;
+    position: absolute;
+    background: #03cafc;
+    left: 16px;
+    font-size: 16px;
+    color: #fff;
+    padding: 8px 20px;
+    line-height: 15px;
+     }
+     .brand-bg .brand-box span {
+         color: #020000;
+         font-weight: 500;
+         font-size: 17px;
+         line-height: 22px;
+     }
+    .buynow {
+        max-width: 160px;
+    width: 100%;
+    padding: 15px 0px;
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: 500;
+    background: #03cafc;
+    color: #fff;
+    text-align: center;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 30px;
+    transition: all .4s ease-in;
+    }
+    
+    .buynow:hover {
+        background: #000;
+        color: #fff;
+        transition: all .4s ease-in;
+        border-radius: 30px;
+    }
+    .seemore {
+        float: none;
+    color: #000;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    }
+    .seemore:hover {color: #ee3e0f; }

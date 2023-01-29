@@ -554,7 +554,7 @@ button {
     float: left;
 }
 
-.shop .titlepage h2 {
+.shop .titlepage h2 { 
     color: #fff;
     border-bottom: #fff solid 1px;
     padding-bottom: 10px;
@@ -658,6 +658,7 @@ button {
     margin-top: 90px;
 }
 
+
 .contact .main_form h3 {
     color: #4b4b4c;
     font-size: 27px;
@@ -681,7 +682,7 @@ button {
     margin-top: 107px;
 }
 
-.main_form .contactus {
+.main_form .contactus { 
     border-bottom: #111111 solid 1px;
     margin-bottom: 25px;
     width: 100%;
@@ -711,7 +712,7 @@ button {
     border-right: inherit;
 }
 
-.send_btn {
+.send_btn {   
     background: #03cafc;
     font-weight: 600;
     font-size: 18px;
@@ -736,114 +737,3 @@ button {
 
 
 /** end contact section **/
-
-/** Footer **/
-footer .footer
-{
-    position: relative;
-    width: 100%;
-    min-height: 300px;
-    background: #f5f6f6;
-}
-footer .footer .content-footer
-{
-    display: flex;
-    position: relative;
-}
-footer .footer .content-footer ul
-{
-    position: relative;
-    list-style: none;
-    margin-left: 100px;
-    margin-top: 30px;
-}
-footer .footer .content-footer ul li
-{
-    padding: 8px;
-}
-footer .footer .content-footer .ul2
-{
-    margin-left: 150px;
-}
-footer .footer .content-footer ul a
-{
-    text-decoration: none;
-    color: black;
-    text-decoration: underline transparent;
-    transition: 0.5s;
-    font-weight: 600;
-}
-footer .footer .content-footer ul a:hover
-{
-    color: #03cafc;
-}
-footer .footer .logo_footer
-{
-    position: absolute;
-    max-width: 450px;
-    right: 0;
-    bottom: 0;
-    padding: 40px;
-}
-
-/*======================================== REDES SOCIAIS ===============================================*/
-footer .footer .content-footer .ul3
-{
-    margin-left: 130px;
-}
-footer .footer .content-footer .ul3 h2
-{
-    color: black;
-    font-weight: 600;
-    text-decoration: underline #03cafc 2px;
-    text-underline-position: under;   
-    font-size: 20pt;
-}
-footer .footer .content-footer .ul3 ul li
-{
-    margin-top: 10px;
-    display: inline-block;
-}
-footer .footer .content-footer .ul3 ul li a
-{
-    font-size: 17px;
-}
-footer .footer .content-footer .ul3 ul li a:hover
-{
-    color: #03cafc;
-    transition: 0.5s;
-}
-footer .footer .content-footer .ul4
-{
-    margin-left: 100px;
-}
-footer .footer .content-footer .ul4 ul li 
-{
-    color: black;
-    margin-top: 10px;
-    font-size: 11pt;
-    font-weight: 600;
-}
-footer .footer .content-footer .ul4 ul li span
-{
-    font-style: italic;
-    text-decoration: underline 2px #03cafcba;
-}
-footer .footer .content-footer .ul4 h2
-{
-    color: black;
-    text-decoration: underline #03cafc 2px;
-    text-underline-position: under;   
-    font-size: 20pt;
-    font-weight: 600;
-}
-footer .footer p
-{
-    position: absolute;
-    color: #03cafcba; 
-    bottom: 0;
-    margin-bottom: 10px;
-    font-size: 10pt;
-    right: 0;
-    margin-right: 40px;
-}

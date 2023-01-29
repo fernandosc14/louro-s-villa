@@ -1,6 +1,6 @@
-<?php
+<?php  
 include ("config.php");
-?>
+?>  
 
 <!DOCTYPE html>
 <html lang="pt">
@@ -18,21 +18,24 @@ include ("config.php");
         <meta name="description" content="">
         <meta name="author" content="">
 
+        
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="css/compras.css">
+        <link rel="stylesheet" href="css/footer.css">
         <link rel="stylesheet" href="css/responsive.css">
         <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
         <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
         <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
-      </head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   </head>
 
     <body class="main-layout">
-    <?php
+    <?php  
       include("menu.php");
       include("banner.php");
-      include("about_section.php"); 
+      include("about_section.php");
       include("lista_destaque.php");
       include("produto_destaque.php");
       include("footer.php"); 

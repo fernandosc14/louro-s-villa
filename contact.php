@@ -32,9 +32,7 @@ include ("config.php");
 
     <body class="main-layout">
     <?php
-    include("menu.php");
     include("form_contacto.php");  
-    include("footer.php");
     ?>
       <!-- end footer -->
       <!-- Javascript files-->

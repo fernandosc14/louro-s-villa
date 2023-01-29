@@ -4,5 +4,5 @@
     $password = '';
     $name = 'loja';
     
-    $conexao = new mysqli($host,$username,$password,$name);
+    $conexao = new mysqli($host,$username,$password,$name);     
 ?>

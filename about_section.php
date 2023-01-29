@@ -9,6 +9,7 @@
                <div class="col-md-7">
                   <div class="titlepage">
                      <h2>Sobre a nossa loja</h2>
+                     <br>
                      <?php echo $descricao?>
                   </div>
                </div>

@@ -11,7 +11,7 @@
                      <div class="carousel-caption">
                         <div class="text-bg">
                            <h1> <span class="blu">Bem-Vindo <br></span>Megabyte</h1>
-                           <a class="read_more" href="#">Compre agora</a>
+                           <a class="read_more" href="loja.php">Compre agora</a>
                         </div>
                      </div>
                   </div>
@@ -21,7 +21,7 @@
                      <div class="carousel-caption">
                         <div class="text-bg">
                            <h1> <span class="blu">Entregando um amanhã melhor <br></span>Atualize sua vida</h1>
-                           <a class="read_more" href="#">Compre agora</a>
+                           <a class="read_more" href="loja.php">Compre agora</a>
                         </div>
                      </div>
                   </div>
@@ -30,8 +30,8 @@
                   <div class="container">
                      <div class="carousel-caption">
                         <div class="text-bg">
-                           <h1> <span class="blu">Entregando um amanhã melhor <br></span>Atualize sua vida</h1>
-                           <a class="read_more" href="#">Compre agora</a>
+                           <h1> <span class="blu">Venha conhecer os nossos <br></span>produtos inéditos!</h1>
+                           <a class="read_more" href="loja.php">Compre agora</a>
                         </div>
                      </div>
                   </div>

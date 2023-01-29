@@ -86,9 +86,6 @@ include ("config.php");
     
       <p><a href="#" onclick="window.print();"><i class="fas fa-print"></i></a></p>
     </div>
-    <?php
-    include("footer_politica.php");
-    ?>
       <!-- end footer -->
       <!-- Javascript files-->
       <script src="js/overlay.js"></script>

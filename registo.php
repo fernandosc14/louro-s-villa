@@ -34,11 +34,7 @@ include ("config.php");
       </head>
 
     <body class="main-layout">
-    <?php
-    include("menu.php");
-    ?>
     <section class="section_contact">
-    <br><br>
     <div class="content">
     
     <div class="container" >
@@ -48,7 +44,7 @@ include ("config.php");
           
           <div class="row align-items-center">
             <div class="col-lg-7 mb-5 mb-lg-0"> 
-              <p class="map_pages"><a href="index.php">Home</a> > Criar Conta</p>
+              <p class="map_pages"><a href="index.php">Home</a> > <b>Criar Conta<b></p>
               
               <h2 class="mb-5">Criar Conta</h2>
 
@@ -142,10 +138,7 @@ include ("config.php");
         </div>
       </div>
   </div>
-</section>  
-    <?php
-    include("footer.php");
-    ?>
+</section>
       <!-- end footer -->
       <!-- Javascript files-->
       <script src="js/notificao.js"></script>
